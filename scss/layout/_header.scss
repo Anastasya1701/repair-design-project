@@ -1,0 +1,51 @@
+
+.header {
+   @include flex(space-between);
+      &--container{
+         @include flex(space-between);
+         max-width: 1256px;
+         margin: 0 auto;
+      }
+}
+
+.header--container-h1{
+   margin: 0;
+      &-logo{
+         @include FuturaDemiC(0.875rem);
+            color: #E3B873;
+            line-height: 83px;
+            text-decoration: none;
+      }
+}
+
+.header--container-nav {
+   width: 581.43px;
+   margin: 15px 95.47px 15px 67px;
+}
+
+.nav-switcher {
+   @include flex(space-between);
+   @include unlist();
+}
+
+.nav-switcher-link {
+   @include unlist();
+   @include FuturaBookC(0.875rem);
+   color: #FFFFFF;
+}
+
+.nav-switcher-link:hover {
+   color: #E3B873;
+ }
+
+ .header--container-block{
+    @include flex(space-between);
+    width: 332px;
+    align-items: center;
+      &-phone-link{
+         color: #E3B873;
+         @include FuturaDemiC(0.875rem);
+         border-bottom: 1px solid #E3B873;
+         @include unlist();
+      }
+ }

@@ -1,0 +1,28 @@
+.aside {
+    background-color: #131313;
+    position: absolute;
+    width: 472px;
+    height: 82px;
+    left: -313px;
+    top: 311px;
+    transform: rotate(90deg);
+    padding-left: 235px;
+    line-height: 82px;
+    &--link{
+        text-decoration: none;
+        position: relative;
+        color: #E3B873;
+        font-weight: 700;
+        @include FuturaDemiC(0.875rem);
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            height: 2px;
+            width: 51px;
+            bottom: 8px;
+            left: 92px;
+            background-color: #E3B873;
+        }
+    }
+}

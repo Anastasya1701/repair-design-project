@@ -1,0 +1,11 @@
+.wrapper {
+    background-color: $color-black;
+    &--inner {
+      @include container();
+      position: relative;
+   }
+ }
+
+ .wrapper--main {
+  background-color: #131313;
+ }
