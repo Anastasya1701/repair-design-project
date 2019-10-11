@@ -6,6 +6,13 @@
    }
  }
 
- .wrapper--main {
-  background-color: #131313;
+ .wrapper--second{
+  background-color: $color-black;
  }
+ .wrapper--main {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+ }
+
+ 

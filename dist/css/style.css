@@ -441,8 +441,14 @@ th {
   position: relative;
 }
 
-.wrapper--main {
+.wrapper--second {
   background-color: #131313;
+}
+
+.wrapper--main {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .header--container-block-button {
@@ -457,6 +463,53 @@ th {
   font-family: "FuturaDemiC",sans-serif;
   font-size: 0.8125rem;
   color: #FFFFFF;
+}
+
+.first-section__button {
+  font-family: "FuturaDemiC",sans-serif;
+  font-size: 0.8rem;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+  border-radius: 2px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 19px 42px 21px 41px;
+  margin-right: 20px;
+}
+
+.first-section__button:hover {
+  background-color: #E3B873;
+}
+
+.scroll-button {
+  color: #fff;
+  position: absolute;
+  top: -52px;
+  z-index: 2;
+  font-family: "Yeseva One",sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #131313;
+  padding: 34px 49px;
+  border: none;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.scroll-button img {
+  margin-left: 15px;
 }
 
 .header {
@@ -479,8 +532,18 @@ th {
   margin: 0 auto;
 }
 
+.header--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 104px;
+}
+
 .header--container-h1 {
   margin: 0;
+  white-space: nowrap;
 }
 
 .header--container-h1-logo {
@@ -492,7 +555,7 @@ th {
 }
 
 .header--container-nav {
-  width: 581.43px;
+  width: 581px;
   margin: 15px 95.47px 15px 67px;
 }
 
@@ -572,5 +635,41 @@ th {
   bottom: 8px;
   left: 92px;
   background-color: #E3B873;
+}
+
+.invite-section {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/dist/asserts/img/imageFirstS.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/dist/asserts/img/imageFirstS.png);
+  width: 94%;
+  height: 707px;
+  margin-left: 84px;
+}
+
+.wrapper--main--text {
+  position: absolute;
+  top: 152px;
+  left: 144px;
+  z-index: 2;
+  color: #fff;
+}
+
+.wrapper--main--text h2 {
+  font-family: "Yeseva One",sans-serif;
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 53px;
+}
+
+.wrapper--main--text p {
+  padding-bottom: 41px;
+  font-family: "FuturaBookC",sans-serif;
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 30px;
+}
+
+.scroll {
+  position: relative;
+  background-color: #131313;
 }
 /*# sourceMappingURL=style.css.map */

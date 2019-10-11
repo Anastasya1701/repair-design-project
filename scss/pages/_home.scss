@@ -26,3 +26,36 @@
         }
     }
 }
+
+.invite-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(/dist/asserts/img/imageFirstS.png);
+    width: 94%;
+    height: 707px;
+    margin-left: 84px;
+}
+
+.wrapper--main--text {
+    position: absolute;
+    top: 152px;
+    left: 144px;
+    z-index: 2;
+    color: #fff;
+}
+
+.wrapper--main--text h2 {
+    @include Yeseva(3rem);
+    font-weight: 100;
+    line-height: 53px;
+}
+
+.wrapper--main--text p {
+    padding-bottom: 41px;
+    @include FuturaBookC(22px);
+    font-weight: 100;
+    line-height: 30px;
+}
+
+.scroll {
+    position: relative;
+    background-color: $color-black;
+}
