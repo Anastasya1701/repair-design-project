@@ -63,3 +63,27 @@
   }
 }
 
+.personal-form--form-btn {
+  width: 200px;
+  height: 52px;
+  font-weight: 600;
+  line-height: 52px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  background: #e3b873;
+  border: 0;
+  border-radius: 2px;
+  outline: none;
+  box-shadow: 0 15px 15px rgba(227, 184, 115, 0.15);
+  cursor: pointer;
+
+@include FuturaDemiC(0.94rem);
+  &:hover {
+    background: #d69833;
+  }
+}
+
+
+
+
