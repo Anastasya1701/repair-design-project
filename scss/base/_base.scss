@@ -12,6 +12,7 @@
 }
 .wrapper--main {
   position: relative;
+  display: flex;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -22,13 +23,16 @@
   background: linear-gradient(to bottom, #131313 0%, #131313 65%, white 65%, white 100%);
 }
 
-/*main {
-  background: #131313;
-}*/
-
 .personal-form {
   background-color: #ffffff;
 
 @include flex(center);
+}
+
+.types-repair {
+  & .wrapper--main {
+    flex-direction: column;
+    padding-bottom: 313px;
+  }
 }
 

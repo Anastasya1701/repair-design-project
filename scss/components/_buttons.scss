@@ -79,9 +79,26 @@
   cursor: pointer;
 
 @include FuturaDemiC(0.94rem);
+
   &:hover {
     background: #d69833;
   }
+}
+
+.cards-btn {
+  position: absolute;
+  bottom: -26px;
+  left: 0;
+  padding: 17px 22px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 25px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #e3b873;
+  border: none;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+@include Yeseva(1.125rem);
 }
 
 

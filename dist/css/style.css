@@ -447,6 +447,9 @@ th {
 
 .wrapper--main {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -462,9 +465,6 @@ th {
   background: linear-gradient(to bottom, #131313 0%, #131313 65%, white 65%, white 100%);
 }
 
-/*main {
-  background: #131313;
-}*/
 .personal-form {
   background-color: #ffffff;
   display: -webkit-box;
@@ -473,6 +473,14 @@ th {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.types-repair .wrapper--main {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 313px;
 }
 
 .header--container-block-button {
@@ -571,6 +579,24 @@ th {
 
 .personal-form--form-btn:hover {
   background: #d69833;
+}
+
+.cards-btn {
+  position: absolute;
+  bottom: -26px;
+  left: 0;
+  padding: 17px 22px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 25px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #e3b873;
+  border: none;
+  -webkit-box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+          box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  font-family: "Yeseva One",sans-serif;
+  font-size: 1.125rem;
 }
 
 .header {
@@ -1116,5 +1142,86 @@ input[type=text] {
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+/*Types of repair section*/
+.types-repair--icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 32px;
+}
+
+.types-repair--icons h2 {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 28px;
+  text-align: center;
+  color: #181818;
+  text-transform: uppercase;
+  font-family: "Yeseva One",sans-serif;
+  font-size: 1.3rem;
+}
+
+.types-repair--cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.types-repair--cards-img {
+  position: relative;
+  height: 681px;
+}
+
+.types-repair--cards-img:not(:first-child) {
+  margin-left: 30px;
+}
+
+.types-repair--cards-img-desc {
+  position: absolute;
+  top: 290px;
+  left: 30px;
+  padding: 26px 30px 50px 34px;
+  background: white;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.types-repair--cards-img-desc h3 {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 25px;
+  color: #363636;
+  font-family: "Yeseva One",sans-serif;
+  font-size: 1.125rem;
+}
+
+.types-repair--cards-img-desc ul {
+  width: 250px;
+  padding-left: 20px;
+  color: #959595;
+}
+
+.types-repair--cards-img-desc ul li {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 27px;
+  font-family: "FuturaBookC",sans-serif;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=style.css.map */
