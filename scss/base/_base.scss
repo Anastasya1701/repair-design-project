@@ -1,18 +1,29 @@
 .wrapper {
-    background-color: $color-black;
-    &--inner {
-      @include container();
-      position: relative;
-   }
- }
-
- .wrapper--second{
   background-color: $color-black;
- }
- .wrapper--main {
-    max-width: 1440px;
-    margin: 0 auto;
+  &--inner {
     position: relative;
- }
 
- 
+@include container();
+  }
+}
+
+.wrapper--second {
+  background-color: $color-black;
+}
+.wrapper--main {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.wrapper-control {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, #131313 0%, #131313 65%, white 65%, white 100%);
+}
+
+
+main {
+  background: #131313;
+}
+

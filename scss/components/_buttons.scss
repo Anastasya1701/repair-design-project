@@ -1,49 +1,65 @@
 .header--container-block-button {
-    border: none;
-    background-color: #E3B873;
-    text-align: center;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-    border-radius: 3px;
-    height: 37px;
-    width: 161px;
-    @include FuturaDemiC(0.8125rem);
-    color: #FFFFFF;
+  width: 161px;
+  height: 37px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #e3b873;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
+
+@include FuturaDemiC(0.8125rem);
 }
 
 .first-section__button {
-    @include FuturaDemiC(0.8rem);
-    line-height: 15px;
-    text-align: center;
-    color: #FFFFFF;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
-    border-radius: 2px;
-    background-color: transparent;
-    border: 1px solid #fff;
-    border-radius: 3px;
-    padding: 19px 42px 21px 41px;
-    margin-right: 20px;
+  margin-right: 20px;
+  padding: 19px 42px 21px 41px;
+  line-height: 15px;
+  text-align: center;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  border-radius: 3px;
+  box-shadow: 0 5px 15px rgba(227, 184, 115, 0.3);
+
+@include FuturaDemiC(0.8rem);
 }
 
-.first-section__button:hover{
-    background-color: #E3B873;
+.first-section__button:hover {
+  background-color: #e3b873;
 }
 
 .scroll-button {
-    color: #fff;
-    position: absolute;
-    top: -52px;
-    z-index: 2;
-    @include Yeseva(0.875rem);
-    font-weight: normal;
-    align-items: center;
-    background-color: $color-black;
-    padding: 34px 49px;
-    border: none;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: space-between;
-    & img {
-        margin-left: 15px;
-    }
+  position: absolute;
+  top: -52px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 34px 49px;
+  font-weight: normal;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: $color-black;
+  border: none;
+
+@include Yeseva(0.875rem);
+
+  & img {
+    margin-left: 15px;
+  }
+}
+
+.slider--images-btn-right {
+  position: absolute;
+  bottom: 198px;
+  left: 723px;
+  z-index: 2;
+  background: transparent;
+  border: none;
+  &img {
+    box-shadow: 0 0 15px rgba(227, 184, 115, 0.5);
+  }
 }
 

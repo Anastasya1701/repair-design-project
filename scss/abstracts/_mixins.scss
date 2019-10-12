@@ -3,6 +3,11 @@
     margin: 0 auto;
 }
 
+@mixin mainContent(){
+    max-width: 1256px;
+    margin: 0 auto;
+}
+
 @mixin flex($space) {
     display: flex;
     justify-content: $space;

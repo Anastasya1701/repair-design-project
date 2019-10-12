@@ -1,61 +1,275 @@
 .aside {
-    background-color: #131313;
-    position: absolute;
-    width: 472px;
-    height: 82px;
-    left: -313px;
-    top: 311px;
-    transform: rotate(90deg);
-    padding-left: 235px;
-    line-height: 82px;
-    &--link{
-        text-decoration: none;
-        position: relative;
-        color: #E3B873;
-        font-weight: 700;
-        @include FuturaDemiC(0.875rem);
-        &::after {
-            content: "";
-            position: absolute;
-            display: block;
-            height: 2px;
-            width: 51px;
-            bottom: 8px;
-            left: 92px;
-            background-color: #E3B873;
-        }
+  position: absolute;
+  top: 311px;
+  left: -313px;
+  width: 472px;
+  height: 82px;
+  padding-left: 235px;
+  line-height: 82px;
+  background-color: #131313;
+  transform: rotate(90deg);
+  &--link {
+    position: relative;
+    font-weight: 700;
+    color: #e3b873;
+    text-decoration: none;
+
+@include FuturaDemiC(0.875rem);
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 8px;
+      left: 92px;
+      display: block;
+      width: 51px;
+      height: 2px;
+      background-color: #e3b873;
     }
+  }
+}
+
+.projects--logo-h2 {
+  position: relative;
 }
 
 .invite-section {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(/dist/asserts/img/imageFirstS.png);
-    width: 94%;
-    height: 707px;
-    margin-left: 84px;
+  width: 94%;
+  height: 707px;
+  margin-left: 84px;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(/dist/asserts/img/imageFirstS.png);
 }
 
 .wrapper--main--text {
-    position: absolute;
-    top: 152px;
-    left: 144px;
-    z-index: 2;
-    color: #fff;
+  position: absolute;
+  top: 152px;
+  left: 144px;
+  z-index: 2;
+  color: #ffffff;
 }
 
 .wrapper--main--text h2 {
-    @include Yeseva(3rem);
-    font-weight: 100;
-    line-height: 53px;
+  font-weight: 100;
+  line-height: 53px;
+
+@include Yeseva(3rem);
+
+  & span {
+    color: #e3b873;
+  }
 }
 
 .wrapper--main--text p {
-    padding-bottom: 41px;
-    @include FuturaBookC(22px);
-    font-weight: 100;
-    line-height: 30px;
+  padding-bottom: 41px;
+  font-weight: 100;
+  line-height: 30px;
+
+@include FuturaBookC(22px);
 }
 
 .scroll {
-    position: relative;
-    background-color: $color-black;
+  position: relative;
+  background-color: $color-black;
 }
+
+.completed-projects-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: $color-black;
+}
+
+.projects {
+  margin-top: 143px;
+  margin-left: 92px;
+  background-color: $color-black;
+}
+
+.projects--logo {
+  & h2 {
+    font-weight: normal;
+    line-height: 37px;
+    color: #e3b873;
+    text-transform: uppercase;
+    letter-spacing: -0.07em;
+
+@include Yeseva(1.7rem);
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 17px;
+      left: 167px;
+      display: block;
+      width: 92px;
+      height: 1px;
+      background-color: #e3b873;
+    }
+  };
+  & p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 100;
+    line-height: 29px;
+    color: #ffffff;
+
+@include FuturaBookC(1.125rem);
+  };
+}
+
+.projects--text-first {
+  margin-bottom: 30px;
+  line-height: 20px;
+  color: #ffffff;
+
+@include flex(space-between);
+
+@include FuturaBookC(0.94rem);
+
+  & h2 {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 25px;
+    color: #e3b873;
+    text-transform: uppercase;
+
+@include Yeseva(1.125rem);
+  }
+}
+
+.projects--text-second {
+  max-width: 88%;
+  line-height: 20px;
+  color: #ffffff;
+
+@include FuturaBookC(0.94rem)
+
+@include flex(space-between);
+
+  & h2 {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 25px;
+    color: #e3b873;
+    text-transform: uppercase;
+
+@include Yeseva(1.125rem);
+  }
+}
+
+.projects--text-arrow {
+  width: 55%;
+  margin-top: 66px;
+
+@include flex(space-between);
+
+  & .circle {
+    width: 64px;
+
+@include flex(space-between);
+
+    & .c1 {
+      width: 10px;
+      height: 10px;
+      font-weight: 15px;
+      background: #ffffff;
+      border-radius: 30px;
+    }
+    & .c2 {
+      width: 10px;
+      height: 10px;
+      font-weight: 15px;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 30px;
+    }
+    & .c3 {
+      width: 10px;
+      height: 10px;
+      font-weight: 15px;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 30px;
+    }
+  }
+}
+
+.slider {
+  max-width: 58%;
+  margin-left: 91px;
+  overflow: hidden;
+}
+
+.slider--menu {
+  margin-top: 107px;
+  &-ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style-type: none;
+    &.slider--menu-ul-link {
+      display: flex;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+}
+
+.slider--menu-ul li {
+  margin-right: 52px;
+}
+
+.slider--menu-ul li a {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  text-decoration: none;
+
+@include Yeseva(0.875rem);
+}
+
+.slider--menu-ul li a:hover {
+  color: #e3b873;
+  border-bottom: 1px solid #e3b873;
+}
+
+.slider--images {
+  position: relative;
+  display: flex;
+  margin-top: 43px;
+  &-sochi {
+    margin-left: 20px;
+  }
+}
+
+/*Online Control Section*/
+.online-control-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  padding: 92px 0 62px 0;
+  &-text {
+    display: flex;
+    flex-direction: column;
+  }
+  & p {
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 28px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+
+@include Yeseva(1.25rem);
+  }
+  & img {
+    margin-top: 13px;
+    padding-bottom: 32px;
+  }
+}
+
+
+
