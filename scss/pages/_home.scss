@@ -336,5 +336,40 @@ input[type=text] {
   color: #141414;
 }
 
+.control-checkbox {
+  position: relative;
+  padding-left: 34px;
+  cursor: pointer;
+
+@include FuturaBookC(1rem);
+  & input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+}
+
+.control-indicator {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background: #e3b873;
+  border: 2px solid #e3b873;
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    display: block;
+    width: 3px;
+    height: 8px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+}
+
 
 
