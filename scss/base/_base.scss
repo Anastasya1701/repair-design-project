@@ -13,8 +13,10 @@
 .wrapper--main {
   position: relative;
   display: flex;
+  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .wrapper-control {
@@ -32,7 +34,11 @@
 .types-repair {
   & .wrapper--main {
     flex-direction: column;
-    padding-bottom: 313px;
+    padding-bottom: 116px;;
   }
+}
+
+.required {
+  @include flex(center);
 }
 

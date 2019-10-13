@@ -1,34 +1,50 @@
-@mixin container(){
-    max-width: 1440px;
-    margin: 0 auto;
+@mixin container() {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-@mixin mainContent(){
-    max-width: 1256px;
-    margin: 0 auto;
+@mixin mainContent() {
+  max-width: 1256px;
+  margin: 0 auto;
 }
 
 @mixin flex($space) {
-    display: flex;
-    justify-content: $space;
+  display: flex;
+  justify-content: $space;
 }
 
 @mixin FuturaDemiC($font-size) {
-    font-family: "FuturaDemiC",sans-serif;
-    font-size: $font-size;    
+  font-size: $font-size;
+  font-family: "FuturaDemiC",sans-serif;
 }
 
 @mixin FuturaBookC($font-size) {
-    font-family: "FuturaBookC",sans-serif;
-    font-size: $font-size;    
+  font-size: $font-size;
+  font-family: "FuturaBookC",sans-serif;
 }
 
 @mixin Yeseva($font-size) {
-    font-family: "Yeseva One",sans-serif;
-    font-size: $font-size;    
+  font-size: $font-size;
+  font-family: "Yeseva One",sans-serif;
+}
+
+@mixin FuturaMediumC($font-size) {
+  font-size: $font-size;
+  font-family: "FuturaMediumC",sans-serif;
 }
 
 @mixin unlist() {
-    text-decoration: none;
-    list-style-type: none;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+@mixin input-text($font-size) {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $font-size;
+  line-height: 20px;
+  font-family: FuturaBookC;
+  color: rgba(54, 54, 54, 0.5);
 }
