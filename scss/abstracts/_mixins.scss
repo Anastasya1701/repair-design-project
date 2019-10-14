@@ -4,7 +4,7 @@
 }
 
 @mixin mainContent() {
-  max-width: 1256px;
+  max-width: 1236px;
   margin: 0 auto;
 }
 
@@ -33,6 +33,11 @@
   font-family: "FuturaMediumC",sans-serif;
 }
 
+@mixin Proxima($font-size) {
+  font-size: $font-size;
+  font-family: "Proxima Nova",sans-serif;
+}
+
 @mixin unlist() {
   list-style-type: none;
   text-decoration: none;
@@ -45,6 +50,20 @@
   font-weight: normal;
   font-size: $font-size;
   line-height: 20px;
-  font-family: FuturaBookC;
-  color: rgba(54, 54, 54, 0.5);
+}
+
+@mixin check-mark() {
+  display: block;
+  width: 3px;
+  height: 8px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+@mixin box-indicator() {
+  width: 18px;
+  height: 18px;
+  background: #e3b873;
+  border: 2px solid #e3b873;
 }

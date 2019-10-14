@@ -98,7 +98,16 @@
   background: #e3b873;
   border: none;
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+
 @include Yeseva(1.125rem);
+}
+
+.required--form form .personal-form--form-btn {
+  align-self: flex-end;
+  width: 214px;
+  height: 52px;
+  margin-top: 40px;
+  line-height: 0;
 }
 
 

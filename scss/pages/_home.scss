@@ -306,7 +306,14 @@
 }
 
 .input-text {
-  @include input-text(1.25rem);
+  font-family: FuturaBookC;
+  color: rgba(54, 54, 54, 0.5);
+
+@include input-text(1.25rem);
+}
+
+.text::placeholder {
+  color: #141414;
 }
 
 input[type=text] {
@@ -324,9 +331,7 @@ input[type=text] {
 
 @include FuturaBookC(1.3rem);
 }
-::placeholder {
-  color: #141414;
-}
+
 
 .control-checkbox {
   position: relative;
@@ -346,24 +351,26 @@ input[type=text] {
   position: absolute;
   top: -2px;
   left: 0;
-  width: 18px;
-  height: 18px;
-  background: #e3b873;
-  border: 2px solid #e3b873;
-  &:after {
+
+@include box-indicator();
+
+  &::after {
     content: " ";
     position: absolute;
     top: 2px;
     left: 6px;
-    display: block;
-    width: 3px;
-    height: 8px;
-    border: solid #ffffff;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
+
+@include check-mark();
   }
 }
 
+.control-checkbox input[type="checkbox"] + .control-indicator::after {
+  content: none;
+}
+
+.control-checkbox input[type="checkbox"]:checked + .control-indicator::after {
+  content: "";
+}
 /*Types of repair section*/
 .types-repair {
   &--icons {
@@ -433,10 +440,6 @@ input[type=text] {
   justify-content: flex-end;
 }
 
-.required {
-  height: 700px;
-}
-
 .circle {
   position: relative;
   margin-left: -27px;
@@ -486,38 +489,6 @@ input[type=text] {
   left: 501px;
 }
 
-.required--form {
-  padding: 77px 0 0 54px;
-  & form {
-    flex-direction: column;
-    align-items: center;
-    padding: 28px 48px;
-    background: $color-black;
-
-@include flex(center);
-
-    & h3 {
-      width: 280px;
-      margin: 0;
-      padding: 0;
-      line-height: 25px;
-      text-align: center;
-      color: #ffffff;
-
-@include FuturaDemiC(1.25rem);
-    }
-    & .text {
-      width: 408px;
-      padding-top: 50px;
-      & p {
-        color: rgba(255, 255, 255, 0.5);
-
-@include input-text(1rem);
-      }
-    }
-  }
-}
-
 .circle-orange--text-box {
   display: flex;
   justify-content: space-between;
@@ -555,4 +526,150 @@ input[type=text] {
   left: -130px;
 }
 
+.required--form {
+  padding: 62px 0 0 54px;
+  & form {
+    flex-direction: column;
+    align-items: center;
+    padding: 28px 48px;
+    background: $color-black;
 
+@include flex(center);
+
+    & h3 {
+      width: 280px;
+      margin: 0;
+      padding: 0;
+      line-height: 25px;
+      text-align: center;
+      color: #ffffff;
+
+@include FuturaDemiC(1.25rem);
+    }
+    & .text {
+      width: 408px;
+      padding-top: 50px;
+      & p {
+        font-family: "FuturaBookC";
+        color: rgba(255, 255, 255, 0.5);
+
+@include input-text(1rem);
+      }
+      & .text-required {
+        width: 100%;
+        margin-right: 50px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        font-weight: normal;
+        line-height: 24px;
+        color: #ffffff;
+        background: #131313;
+        border: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        outline: none;
+        cursor: pointer;
+
+@include FuturaBookC(1.125rem);
+      }
+    }
+    & .control-checkbox {
+      align-self: flex-start;
+      margin-top: 18px;
+      line-height: 22px;
+      color: white;
+
+@include FuturaBookC(1.2rem);
+    }
+  }
+}
+
+.text-required::placeholder {
+  line-height: 25px;
+  color: #ffffff;
+
+@include FuturaMediumC(1.125rem);
+}
+
+.required--form-save {
+  display: flex;
+  width: 364px;
+  padding-top: 40px;
+  font-size: 20px;
+  line-height: 25px;
+  font-family: FuturaDemiC;
+  color: #e3b873;
+  text-shadow: 0 3px 10px rgba(227, 184, 115, 0.15);;
+}
+
+/*Section fantasies*/
+.fantasies {
+  padding-top: 242px;
+  padding-bottom: 42px;
+
+@include flex(center);
+
+  &--navbar {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    & h2 {
+      margin: 0;
+      padding-top: 146px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 37px;
+      color: #e3b873;
+      text-transform: uppercase;
+
+@include Yeseva(1.7rem);
+    }
+    &-menu {
+      margin: 0;
+      padding: 0;
+      padding-top: 32px;
+      list-style-type: none;
+      text-decoration: none;
+      &-link {
+        line-height: 34px;
+        color: #ffffff;
+        text-decoration: none;
+
+@include Proxima(01.25rem);
+      }
+    }
+  }
+}
+
+.fantasies--navbar-menu li:not(:first-child) {
+  margin-top: 18px;
+}
+
+.fantasies--navbar-menu-link:hover {
+  color: #e3b873;
+  border-bottom: 1px solid #e3b873;;
+}
+
+.fantasies--img {
+  position: relative;
+  width: 52%;
+  padding-right: 100px;
+
+@include flex(flex-end);
+
+  &-first {
+    position: absolute;
+    top: -41px;
+    left: 1px;
+    flex-direction: column;
+    height: 948px;
+
+@include flex(space-between);
+  }
+  &-second {
+    flex-direction: column;
+    height: 938px;
+    margin-top: -109px;
+
+@include flex(space-between);
+  }
+}

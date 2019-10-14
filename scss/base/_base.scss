@@ -39,6 +39,18 @@
 }
 
 .required {
-  @include flex(center);
+  min-height: 700px;
+
+@include flex(center);
+}
+
+.fantasies {
+  & .wrapper--main {
+    justify-content: space-between;
+    height: 864px;
+    overflow: visible;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/dist/asserts/img/appartment.png);
+    background-repeat: no-repeat;
+  }
 }
 
