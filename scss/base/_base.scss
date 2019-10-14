@@ -68,6 +68,20 @@
   & .wrapper--main {
     justify-content: space-between;
     padding-top: 6px;
+
+@include mainContent();
+  }
+}
+
+.team {
+  background: linear-gradient(to bottom, #131313 0%, #131313 57%,#ffffff 57%, #ffffff 100%);
+
+  & .wrapper--main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 96px;
+
 @include mainContent();
   }
 }

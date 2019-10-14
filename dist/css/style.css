@@ -533,6 +533,27 @@ th {
   margin: 0 auto;
 }
 
+.team {
+  background: -webkit-gradient(linear, left top, left bottom, from(#131313), color-stop(57%, #131313), color-stop(57%, #ffffff), to(#ffffff));
+  background: linear-gradient(to bottom, #131313 0%, #131313 57%, #ffffff 57%, #ffffff 100%);
+}
+
+.team .wrapper--main {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 96px;
+  max-width: 1238px;
+  margin: 0 auto;
+}
+
 .header--container-block-button {
   width: 161px;
   height: 37px;
@@ -1395,7 +1416,7 @@ input[type=text] {
 }
 
 .required--form {
-  padding: 62px 100px 0 54px;
+  padding: 62px 66px 0 54px;
 }
 
 .required--form form {
@@ -1771,5 +1792,88 @@ input[type=text] {
 
 .steps-block:hover {
   color: #ffffff;
+}
+
+/*Team Section*/
+.team .types-repair--cards {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 84px;
+}
+
+.team .types-repair--cards-img {
+  height: 500px;
+}
+
+.team .types-repair--cards-img:not(:first-child) {
+  margin-left: 106px;
+}
+
+.team .types-repair--icons h2 {
+  color: #ffffff;
+}
+
+.team .personal-form--text {
+  margin: 0;
+  padding: 23px 0 40px 0;
+  color: #ffffff;
+}
+
+.team .types-repair--cards-img-desc {
+  left: 22px;
+  padding: 0;
+}
+
+.team .types-repair--cards-img-desc h3 {
+  padding: 22px 20px 9px 20px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 25px;
+  text-align: center;
+  color: #181818;
+  font-size: 1.125rem;
+  font-family: "Yeseva One",sans-serif;
+}
+
+.team .types-repair--cards-img-desc p {
+  margin: 0;
+  padding: 9px 23px 24px 23px;
+  line-height: 26px;
+  text-align: center;
+  color: #959595;
+  font-size: 1.125rem;
+  font-family: "FuturaBookC",sans-serif;
+}
+
+.team .types-repair--cards-img-desc .work-experience {
+  padding: 14px 23px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #e3b873;
+  font-size: 0.8rem;
+  font-family: "Yeseva One",sans-serif;
+}
+
+.icons-team {
+  position: absolute;
+  top: -58px;
+  left: -54px;
+}
+
+.team-text {
+  width: 558px;
+  margin: 0;
+  padding-top: 18px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 34px;
+  text-align: center;
+  color: #363636;
+  font-size: 1.25rem;
+  font-family: "FuturaBookC",sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
