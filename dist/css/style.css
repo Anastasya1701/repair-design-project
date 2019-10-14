@@ -506,6 +506,33 @@ th {
   background-repeat: no-repeat;
 }
 
+.design-project {
+  padding-top: 113px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(60%, #ffffff), color-stop(60%, #131313), to(#131313));
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 60%, #131313 60%, #131313 100%);
+}
+
+.design-project .wrapper--main {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: visible;
+}
+
+.steps {
+  background-color: #131313;
+}
+
+.steps .wrapper--main {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 6px;
+  max-width: 1238px;
+  margin: 0 auto;
+}
+
 .header--container-block-button {
   width: 161px;
   height: 37px;
@@ -629,6 +656,10 @@ th {
   height: 52px;
   margin-top: 40px;
   line-height: 0;
+}
+
+.types-repair--cards-img-desc .cards-btn {
+  padding: 17px 68px 17px 33px;
 }
 
 .header {
@@ -897,6 +928,11 @@ th {
   font-family: "Yeseva One",sans-serif;
 }
 
+.arrow-first,
+.arrow-second {
+  cursor: pointer;
+}
+
 .projects--text-arrow {
   width: 55%;
   margin-top: 66px;
@@ -908,7 +944,7 @@ th {
           justify-content: space-between;
 }
 
-.projects--text-arrow .circle {
+.projects--text-arrow .circles {
   width: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -918,7 +954,7 @@ th {
           justify-content: space-between;
 }
 
-.projects--text-arrow .circle .c1 {
+.projects--text-arrow .circles .c1 {
   width: 10px;
   height: 10px;
   font-weight: 15px;
@@ -926,15 +962,7 @@ th {
   border-radius: 30px;
 }
 
-.projects--text-arrow .circle .c2 {
-  width: 10px;
-  height: 10px;
-  font-weight: 15px;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 30px;
-}
-
-.projects--text-arrow .circle .c3 {
+.projects--text-arrow .circles .c3 {
   width: 10px;
   height: 10px;
   font-weight: 15px;
@@ -1367,7 +1395,7 @@ input[type=text] {
 }
 
 .required--form {
-  padding: 62px 0 0 54px;
+  padding: 62px 100px 0 54px;
 }
 
 .required--form form {
@@ -1585,5 +1613,163 @@ input[type=text] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+/* Design Project section*/
+.design-project .wrapper--main p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0;
+  padding: 8px 0 40px 0;
+}
+
+.design-project .wrapper--main .types-repair--cards-img-desc ul li {
+  font-size: 1rem;
+}
+
+/*Steps Section*/
+.steps--description {
+  padding-top: 53px;
+}
+
+.steps--description .work {
+  line-height: 21px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "FuturaDemiC",sans-serif;
+}
+
+.steps--description h3 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 18px;
+  margin-bottom: 92px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 37px;
+  color: #e3b873;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-family: "Yeseva One",sans-serif;
+}
+
+.steps--description .line {
+  position: absolute;
+  top: 54px;
+  left: 218px;
+  width: 92px;
+  height: 1px;
+  background: #e3b873;
+}
+
+.steps--goal-steps {
+  min-width: 62%;
+}
+
+.steps--goal-steps img {
+  padding-top: 70px;
+}
+
+.steps--description-text span {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 25px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  font-family: "Yeseva One",sans-serif;
+}
+
+.steps--description-text h2 {
+  margin-top: 22px;
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 23px;
+  color: #e3b873;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Yeseva One",sans-serif;
+}
+
+.steps--description-text p {
+  line-height: 25px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: "FuturaBookC",sans-serif;
+}
+
+.steps--description-text .second-p {
+  padding-bottom: 55px;
+}
+
+.steps--description-text .projects--text-arrow {
+  width: 287px;
+}
+
+.steps--description-text .projects--text-arrow .circles {
+  width: 145px;
+}
+
+.steps--goal-steps-flex {
+  padding-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.steps--goal-steps-flex-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 82px;
+  height: 178px;
+}
+
+.steps-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.steps-block .steps-text {
+  line-height: 18px;
+  font-size: 0.95rem;
+  font-family: "FuturaBookC",sans-serif;
+}
+
+.steps-block .steps-number {
+  width: 19px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 21px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e3b873;
+  font-size: 1rem;
+  font-family: "Yeseva One",sans-serif;
+}
+
+.steps-block:hover {
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

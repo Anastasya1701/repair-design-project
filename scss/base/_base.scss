@@ -34,7 +34,7 @@
 .types-repair {
   & .wrapper--main {
     flex-direction: column;
-    padding-bottom: 116px;;
+    padding-bottom: 116px;
   }
 }
 
@@ -51,6 +51,24 @@
     overflow: visible;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/dist/asserts/img/appartment.png);
     background-repeat: no-repeat;
+  }
+}
+
+.design-project {
+  padding-top: 113px;
+  background: linear-gradient(to bottom,#ffffff  0% ,#ffffff  60% ,#131313 60%, #131313 100%);
+  & .wrapper--main {
+    flex-direction: column;
+    overflow: visible;
+  }
+}
+
+.steps {
+  background-color: $color-black;
+  & .wrapper--main {
+    justify-content: space-between;
+    padding-top: 6px;
+@include mainContent();
   }
 }
 

@@ -157,13 +157,18 @@
   }
 }
 
+.arrow-first,
+.arrow-second {
+  cursor: pointer;
+}
+
 .projects--text-arrow {
   width: 55%;
   margin-top: 66px;
 
 @include flex(space-between);
 
-  & .circle {
+  & .circles {
     width: 64px;
 
 @include flex(space-between);
@@ -175,13 +180,7 @@
       background: #ffffff;
       border-radius: 30px;
     }
-    & .c2 {
-      width: 10px;
-      height: 10px;
-      font-weight: 15px;
-      background: rgba(255, 255, 255, 0.3);
-      border-radius: 30px;
-    }
+
     & .c3 {
       width: 10px;
       height: 10px;
@@ -527,7 +526,7 @@ input[type=text] {
 }
 
 .required--form {
-  padding: 62px 0 0 54px;
+  padding: 62px 100px 0 54px;
   & form {
     flex-direction: column;
     align-items: center;
@@ -673,3 +672,144 @@ input[type=text] {
 @include flex(space-between);
   }
 }
+
+/* Design Project section*/
+.design-project {
+  & .wrapper--main {
+    & p {
+      align-self: center;
+      margin: 0;
+      padding: 8px 0 40px 0;
+    }
+    & .types-repair--cards {
+      &-img {
+        &-desc ul li {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+/*Steps Section*/
+
+.steps--description {
+  padding-top: 53px;
+  & .work {
+    line-height: 21px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+@include FuturaDemiC(1rem);
+  }
+  & h3 {
+    position: relative;
+    display: flex;
+    margin-top: 18px;
+    margin-bottom: 92px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 37px;
+    color: #e3b873;
+    text-transform: uppercase;
+
+@include Yeseva(01.7rem);
+  }
+  & .line {
+    position: absolute;
+    top: 54px;
+    left: 218px;
+    width: 92px;
+    height: 1px;
+    background: #e3b873;
+  }
+}
+
+.steps--goal-steps {
+  min-width: 62%;
+  & img {
+    padding-top: 70px;
+  }
+}
+
+.steps--description-text {
+  & span {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+@include Yeseva(1.125rem);
+  }
+  & h2 {
+    margin-top: 22px;
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 23px;
+    color: #e3b873;
+    text-transform: uppercase;
+
+@include Yeseva(1rem);
+  }
+  & p {
+    line-height: 25px;
+    color: #ffffff;
+
+@include FuturaBookC(1rem);
+  }
+  & .second-p {
+    padding-bottom: 55px;
+  }
+  & .projects--text-arrow {
+    width: 287px;
+    & .circles {
+      width: 145px;
+    }
+  }
+}
+
+.steps--goal-steps-flex {
+  padding-top: 150px;
+
+@include flex(space-between);
+
+  &-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 82px;
+    height: 178px;
+  }
+}
+
+.steps-block {
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  & .steps-text {
+    line-height: 18px;
+
+@include FuturaBookC(0.95rem);
+  }
+  & .steps-number {
+    width: 19px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 21px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e3b873;
+
+@include Yeseva(1rem);
+  }
+}
+
+.steps-block:hover {
+  color: #ffffff;
+}
+
+
+
+
