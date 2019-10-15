@@ -97,3 +97,11 @@
   }
 }
 
+.questions {
+  background: linear-gradient(to bottom, white 0%, white 58%, #131313 58%, #131313 100%);
+  & .wrapper--main {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+

@@ -897,6 +897,7 @@ input[type=text] {
   }
   & .types-repair--cards {
     & .types-repair--cards-img {
+      height: 500px;
       &-name {
         width: 376px;
         & p {
@@ -928,6 +929,40 @@ input[type=text] {
   left: -15px;
 }
 
+/*Question section*/
+.questions {
+  & .required--form {
+    width: 62%;
+    margin: 0 auto;
+    & form .control-checkbox {
+      align-self: center;
+      margin-top: 45px;
+    }
+    & h3 {
+      font-style: normal;
+      font-weight: normal;
+      line-height: 28px;
+      text-align: center;
+      color: #ffffff;
+      text-transform: uppercase;
+
+@include Yeseva(1.25rem);
+    }
+  }
+  & .required--form form .text {
+    width: 55%;
+    & .text-required {
+      margin: 0;
+    }
+  }
+  & .required--form form .text:nth-child(1) {
+    margin-right: 101px;
+  }
+}
+
+.label-flex {
+  display: flex;
+}
 
 
 

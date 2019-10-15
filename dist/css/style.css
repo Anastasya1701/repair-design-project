@@ -570,6 +570,21 @@ th {
   margin: 0 auto;
 }
 
+.questions {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(58%, white), color-stop(58%, #131313), to(#131313));
+  background: linear-gradient(to bottom, white 0%, white 58%, #131313 58%, #131313 100%);
+}
+
+.questions .wrapper--main {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .header--container-block-button {
   width: 161px;
   height: 37px;
@@ -697,6 +712,13 @@ th {
 
 .types-repair--cards-img-desc .cards-btn {
   padding: 17px 68px 17px 33px;
+}
+
+.questions form .personal-form--form-btn {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 48px;
 }
 
 .header {
@@ -1904,6 +1926,10 @@ input[type=text] {
   padding-bottom: 40px;
 }
 
+.clients .types-repair--cards .types-repair--cards-img {
+  height: 500px;
+}
+
 .clients .types-repair--cards .types-repair--cards-img-name {
   width: 376px;
 }
@@ -1933,5 +1959,47 @@ input[type=text] {
 .complete-project-icon {
   position: absolute;
   left: -15px;
+}
+
+/*Question section*/
+.questions .required--form {
+  width: 62%;
+  margin: 0 auto;
+}
+
+.questions .required--form form .control-checkbox {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 45px;
+}
+
+.questions .required--form h3 {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-family: "Yeseva One",sans-serif;
+}
+
+.questions .required--form form .text {
+  width: 55%;
+}
+
+.questions .required--form form .text .text-required {
+  margin: 0;
+}
+
+.questions .required--form form .text:nth-child(1) {
+  margin-right: 101px;
+}
+
+.label-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
