@@ -34,7 +34,7 @@
 }
 
 .invite-section {
-  width: 94%;
+  // width: 94%;
   height: 707px;
   margin-left: 84px;
   background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(/dist/asserts/img/imageFirstS.png);
@@ -272,6 +272,7 @@
 /*Personal Form Section*/
 .container-personal {
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   width: 100%;
   max-width: 1440px;
@@ -298,8 +299,8 @@
 @include FuturaBookC(1.25rem);
   }
   &--form {
+    flex-wrap: wrap;
     padding: 94px 0 34px 0;
-
 @include flex(center);
   }
 }

@@ -432,6 +432,7 @@ th {
 }
 
 .wrapper {
+  overflow: hidden;
   background-color: #131313;
 }
 
@@ -633,7 +634,7 @@ th {
 
 .scroll-button {
   position: absolute;
-  top: -52px;
+  top: -65px;
   z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -748,22 +749,21 @@ th {
 }
 
 .header--container {
+  max-width: 1256px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1256px;
-  margin: 0 auto;
 }
 
 .header--container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  width: 100%;
   margin-left: 104px;
 }
 
@@ -773,16 +773,16 @@ th {
 }
 
 .header--container-h1-logo {
+  line-height: 83px;
+  color: #e3b873;
+  text-decoration: none;
   font-size: 0.875rem;
   font-family: "FuturaDemiC",sans-serif;
-  color: #E3B873;
-  line-height: 83px;
-  text-decoration: none;
 }
 
 .header--container-nav {
-  width: 581px;
-  margin: 15px 95.47px 15px 67px;
+  width: 55%;
+  margin: 15px 53px 15px 93px;
 }
 
 .nav-switcher {
@@ -797,37 +797,42 @@ th {
 }
 
 .nav-switcher-link {
+  color: #ffffff;
   list-style-type: none;
   text-decoration: none;
   font-size: 0.875rem;
   font-family: "FuturaBookC",sans-serif;
-  color: #FFFFFF;
 }
 
 .nav-switcher-link:hover {
-  color: #E3B873;
+  color: #e3b873;
 }
 
 .header--container-block {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 38%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 332px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .header--container-block-phone-link {
-  color: #E3B873;
+  color: #e3b873;
+  border-bottom: 1px solid #e3b873;
   font-size: 0.875rem;
   font-family: "FuturaDemiC",sans-serif;
-  border-bottom: 1px solid #E3B873;
   list-style-type: none;
   text-decoration: none;
+}
+
+footer .header--container {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .aside {
@@ -868,7 +873,6 @@ th {
 }
 
 .invite-section {
-  width: 94%;
   height: 707px;
   margin-left: 84px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/dist/asserts/img/imageFirstS.png);
@@ -1155,6 +1159,8 @@ th {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1188,6 +1194,8 @@ th {
 }
 
 .personal-form--form {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 94px 0 34px 0;
   display: -webkit-box;
   display: -ms-flexbox;

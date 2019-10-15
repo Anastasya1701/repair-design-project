@@ -1,4 +1,11 @@
+// .header {
+//   overflow-y: hidden;
+// }
+// .main {
+//   overflow-y: hidden;
+// }
 .wrapper {
+  overflow: hidden;
   background-color: $color-black;
   &--inner {
     position: relative;

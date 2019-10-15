@@ -1,58 +1,67 @@
 
 .header {
-   @include flex(space-between);
-      &--container{
-         @include flex(space-between);
-         max-width: 1256px;
-         margin: 0 auto;
-      }
+  @include flex(space-between);
+  &--container {
+    max-width: 1256px;
+    margin: 0 auto;
+
+@include flex(space-between);
+  }
 }
 
 .header--container {
-   display: flex;
-   flex-wrap: wrap; 
-   margin-left: 104px;
+  display: flex;
+  width: 100%;
+  margin-left: 104px;
 }
 
-.header--container-h1{
-   margin: 0;
-   white-space: nowrap;
-      &-logo{
-         @include FuturaDemiC(0.875rem);
-            color: #E3B873;
-            line-height: 83px;
-            text-decoration: none;
-      }
+.header--container-h1 {
+  margin: 0;
+  white-space: nowrap;
+  &-logo {
+    line-height: 83px;
+    color: #e3b873;
+    text-decoration: none;
+
+@include FuturaDemiC(0.875rem);
+  }
 }
 
 .header--container-nav {
-   width: 581px;
-   margin: 15px 95.47px 15px 67px;
+  width: 55%;
+  margin: 15px 53px 15px 93px;
 }
 
 .nav-switcher {
-   @include flex(space-between);
-   @include unlist();
+  @include flex(space-between);
+
+@include unlist();
 }
 
 .nav-switcher-link {
-   @include unlist();
-   @include FuturaBookC(0.875rem);
-   color: #FFFFFF;
+  color: #ffffff;
+
+@include unlist();
+
+@include FuturaBookC(0.875rem);
 }
 
 .nav-switcher-link:hover {
-   color: #E3B873;
- }
+  color: #e3b873;
+}
 
- .header--container-block{
-    @include flex(space-between);
-    width: 332px;
-    align-items: center;
-      &-phone-link{
-         color: #E3B873;
-         @include FuturaDemiC(0.875rem);
-         border-bottom: 1px solid #E3B873;
-         @include unlist();
-      }
- }
+.header--container-block {
+  align-items: center;
+  width: 38%;
+
+@include flex(space-between);
+
+  &-phone-link {
+    color: #e3b873;
+    border-bottom: 1px solid #e3b873;
+
+@include FuturaDemiC(0.875rem);
+
+@include unlist();
+  }
+}
