@@ -881,8 +881,54 @@ input[type=text] {
   line-height: 34px;
   text-align: center;
   color: #363636;
+
 @include FuturaBookC(1.25rem);
 }
+
+/*Clients Section*/
+.clients {
+  & .types-repair--icons {
+    padding-bottom: 0;
+  }
+  & .personal-form--text {
+    margin: 0;
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+  & .types-repair--cards {
+    & .types-repair--cards-img {
+      &-name {
+        width: 376px;
+        & p {
+          line-height: 180%;
+          color: #959595;
+
+@include FuturaBookC(0.95rem);
+        }
+      }
+    }
+  }
+}
+
+.clients-name {
+  display: flex;
+  font-style: normal;
+  font-weight: normal;
+  color: #181818;
+
+@include Yeseva(1rem);
+
+  & h3 {
+    padding-left: 26px;
+  }
+}
+
+.complete-project-icon {
+  position: absolute;
+  left: -15px;
+}
+
+
 
 
 

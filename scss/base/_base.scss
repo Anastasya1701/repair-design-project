@@ -86,3 +86,14 @@
   }
 }
 
+.clients {
+  & .wrapper--main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 89px;
+
+@include mainContent();
+  }
+}
+

@@ -554,6 +554,22 @@ th {
   margin: 0 auto;
 }
 
+.clients .wrapper--main {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 89px;
+  max-width: 1238px;
+  margin: 0 auto;
+}
+
 .header--container-block-button {
   width: 161px;
   height: 37px;
@@ -1875,5 +1891,47 @@ input[type=text] {
   color: #363636;
   font-size: 1.25rem;
   font-family: "FuturaBookC",sans-serif;
+}
+
+/*Clients Section*/
+.clients .types-repair--icons {
+  padding-bottom: 0;
+}
+
+.clients .personal-form--text {
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+.clients .types-repair--cards .types-repair--cards-img-name {
+  width: 376px;
+}
+
+.clients .types-repair--cards .types-repair--cards-img-name p {
+  line-height: 180%;
+  color: #959595;
+  font-size: 0.95rem;
+  font-family: "FuturaBookC",sans-serif;
+}
+
+.clients-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-style: normal;
+  font-weight: normal;
+  color: #181818;
+  font-size: 1rem;
+  font-family: "Yeseva One",sans-serif;
+}
+
+.clients-name h3 {
+  padding-left: 26px;
+}
+
+.complete-project-icon {
+  position: absolute;
+  left: -15px;
 }
 /*# sourceMappingURL=style.css.map */
