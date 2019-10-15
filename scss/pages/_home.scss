@@ -964,6 +964,28 @@ input[type=text] {
   display: flex;
 }
 
+/*Address Section*/
+.address {
+  & h2 {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 28px;
+    text-align: center;
+    color: #e3b873;
+    text-transform: uppercase;
+
+@include Yeseva(1.25rem);
+  }
+  &--icons {
+    padding-top: 7px;
+    text-align: center;
+  }
+  &--map {
+    padding-top: 31px;
+    text-align: center;
+  }
+}
+
 
 
 

@@ -105,3 +105,11 @@
   }
 }
 
+.address {
+  padding-top: 52px;
+  background-color: $color-black;
+  & .wrapper--main {
+    flex-direction: column;
+  }
+}
+
