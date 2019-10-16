@@ -55,7 +55,8 @@
                                 cost of materials due to the organization of work
                             </p>
                             <button class="first-section__button">CALCULATE THE COST</button>
-                            <button class="first-section__button">SUBMIT YOUR APPLICATION</button>
+                            <button class="first-section__button desktop">SUBMIT YOUR APPLICATION</button>
+                            <button class="first-section__button mobile"> APPLICATION</button>
                         </div>
                     </section>
                     <section class="scroll">
@@ -68,6 +69,7 @@
         </div>     
         <div class="wrapper">
             <div class="wrapper--inner">
+                <!-- Completed Project Section -->
                 <section class="completed-projects-section">
                     <div class="projects">
                         <div class="projects--logo">
@@ -86,6 +88,16 @@
                                 market we have made happy more than 1000 families
                             </p>
                         </div> 
+                        <div class="slider-btn">
+                            <img src="/dist/asserts/img/projects-mobile.png" alt="projects-mobile">
+                            <button class="slider-btn--yellow btn-left">
+                                <img src="/dist/asserts/img/slider-btn--left.svg" alt="slider-btn--left">
+                            </button>
+                            <button class="slider-btn--yellow btn-right">
+                                <img src="/dist/asserts/img/slider-btn--right.svg" alt="slider-btn--right">
+                            </button>
+                        </div>
+                        
                         <div class="projects--text">
                             <div class="projects--text-first">
                                 <div class="text-conditions">
@@ -133,7 +145,7 @@
                             </ul>
                         </div>
                         <div class="slider--images">
-                            <img src="/dist/asserts/img/Furniture.png" alt="rostov">
+                            <img src="/dist/asserts/img/Furniture.png" class="slider--images-rostov" alt="rostov">
                             <img src="/dist/asserts/img/sochi2.png" class="slider--images-sochi" alt="sochi">
                             <button class="slider--images-btn-right">
                                 <img src="/dist/asserts/img/sliderRight.svg" class="slider--images-btn-right-img" alt="">
@@ -143,6 +155,7 @@
                 </section>
             </div>
         </div>
+        <!-- Wrapper Control section -->
         <section  class="wrapper-control">
             <div class="online-control-section">
                 <div class="online-control-section-text">
@@ -174,9 +187,9 @@
                         </label>
                         <label for="phone">
                             <p class="input-text">Phone</p>
-                            <input id="phone" class="text" type="text" placeholder="Your phone number:" required>
+                            <input id="phone" class="text" type="text" placeholder="Your phone number:" required pattern="[0-9]{12}">
                         </label>
-                        <button class="personal-form--form-btn" type="submit">Submit</button>
+                        <button class="personal-form--form-btn desktop" type="submit">Submit</button>
                     </form>
                     <div class="personal-form--checkbox">
                         <label class="control-checkbox" for="agree" >          
@@ -185,8 +198,12 @@
                             <div class="control-indicator"></div>
                         </label>
                     </div>
+                    <div class="mobile-btn--submit">
+                         <button class="personal-form--form-btn mobile" type="submit">Submit</button>
+                    </div>
             </div>
         </section>
+        <!-- Types repair section -->
         <section class="types-repair">
             <div class="wrapper--main">
                 <div class="types-repair--icons">
@@ -195,7 +212,7 @@
                 </div>
                 <div class="types-repair--cards">
                     <div class="types-repair--cards-img">
-                        <img src="/dist/asserts/img/redecorating.png" alt="redecorating">
+                        <img src="/dist/asserts/img/redecorating.png" class="types-repair--cards-img-mobile" alt="redecorating">
                         <div class="types-repair--cards-img-desc">
                             <h3>Redecorating</h3>
                             <ul>
@@ -211,7 +228,7 @@
                         </div>
                     </div>
                     <div class="types-repair--cards-img">
-                        <img src="/dist/asserts/img/overhaul.png" alt="overhaul">
+                        <img src="/dist/asserts/img/overhaul.png" class="types-repair--cards-img-mobile" alt="overhaul">
                         <div class="types-repair--cards-img-desc">
                             <h3>Overhaul</h3>
                             <ul>
@@ -227,7 +244,7 @@
                         </div>
                     </div>
                     <div class="types-repair--cards-img">
-                        <img src="/dist/asserts/img/designer.png" alt="designer">
+                        <img src="/dist/asserts/img/designer.png"  class="types-repair--cards-img-mobile" alt="designer">
                         <div class="types-repair--cards-img-desc">
                             <h3>Designer Repair</h3>
                             <ul>
@@ -245,6 +262,7 @@
                 </div>
             </div> 
         </section>
+        <!-- Required Section -->
         <section class="required">
             <div class="wrapper--main">
             <div class="p">
@@ -298,12 +316,29 @@
                 </div>
              </div>
         </section>
+        <!-- Fantasies section -->
+        <section class="fantasies-mobile">
+                <h2>We realize your 
+                        <br>
+                        wildest fantasies
+                </h2>
+                <div class="fantasies-mobile--img">
+                    <img src="/dist/asserts/img/clock-mobile.png" alt="clock-mobile">
+                    <button class="slider-btn--yellow btn-left">
+                            <img src="/dist/asserts/img/slider-btn--left.svg" alt="slider-btn--left">
+                    </button>
+                    <button class="slider-btn--yellow btn-right">
+                        <img src="/dist/asserts/img/slider-btn--right.svg" alt="slider-btn--right">
+                    </button>
+                </div>
+        </section>
         <section class="fantasies">
             <div class="wrapper--main">
                 <div class="fantasies--navbar">
                     <h2>We realize your 
                         <br>
-                        wildest fantasies</h2>
+                        wildest fantasies
+                    </h2>
                     <ul class="fantasies--navbar-menu">
                         <li><a href="#" class="fantasies--navbar-menu-link">American classic</a></li>
                         <li><a href="#" class="fantasies--navbar-menu-link">Empire</a></li>
@@ -330,6 +365,7 @@
                 </div>
             </div>
         </section>
+        <!-- Design Project section -->
         <section class="design-project">
             <div class="wrapper--main">              
                     <div class="types-repair--icons">
@@ -343,7 +379,8 @@
                    </p>
                     <div class="types-repair--cards">
                         <div class="types-repair--cards-img">
-                            <img src="/dist/asserts/img/mini.png" alt="mini">
+                            <img src="/dist/asserts/img/mini.png" class="types-repair--cards-img-mobile" alt="mini">
+                            
                             <div class="types-repair--cards-img-desc">
                                 <h3>Mini</h3>
                                 <ul>
@@ -356,7 +393,9 @@
                             </div>
                         </div>
                         <div class="types-repair--cards-img">
-                            <img src="/dist/asserts/img/standard.png" alt="standard">
+                            <img src="/dist/asserts/img/standard.png" class="standard-mob desktop" alt="standard">
+                            <img src="/dist/asserts/img/full.png" class="types-repair--cards-img-mobile mobile" alt="full">
+                            <!-- <img src="/dist/asserts/img/mini.png" class="standard-mob types-repair--cards-img-mobile" alt="mini"> -->
                             <div class="types-repair--cards-img-desc">
                                 <h3>Standatd</h3>
                                 <ul>
@@ -372,7 +411,8 @@
                             </div>
                         </div>
                         <div class="types-repair--cards-img">
-                            <img src="/dist/asserts/img/full.png" alt="full">
+                            <img src="/dist/asserts/img/standard.png" class="standard-mob types-repair--cards-img-mobile mobile" alt="standard">
+                            <img src="/dist/asserts/img/full.png" class="types-repair--cards-img-mobile desktop" alt="full">
                             <div class="types-repair--cards-img-desc">
                                 <h3>Full</h3>
                                 <ul>
@@ -529,12 +569,12 @@
                     </div> 
                     <div class="personal-form--line"> </div>
                     <p class="team-text">
-                            Each employee of our company is a qualified full-time
-                            specialist with work experience of 6 years. 
-                            <br>
-                            We do
-                            not have laborers and guest workers, each employee carries
-                            out work corresponding to his specialty. 
+                        Each employee of our company is a qualified full-time
+                        specialist with work experience of 6 years. 
+                        <br>
+                        We do
+                        not have laborers and guest workers, each employee carries
+                        out work corresponding to his specialty. 
                     </p>
             </div>
         </section>
@@ -617,22 +657,31 @@
                             <img src="/dist/asserts/img/project3.png" class="complete-project-icon" alt="project3">  
                     </div>
                 </div>
+            </div>    
         </section>
         <section class="questions">
                 <div class="wrapper--main">
-                        <div class="required--form">
-                            <form action="">
+                        <div class="required--form  desktop-form">
+                            <form action="" >
                                 <h3>have any questions?</h3>
                                 <div class="label-flex">
-                                    <label for="" class="text">
-                                            <p>Name</p>
-                                            <input class="text-required" type="text" required placeholder="What is your name:">
+                                    <label for="" class="text desktop">
+                                        <p>Name</p>
+                                        <input class="text-required" type="text" required placeholder="What is your name:">
                                     </label>
-                                    <label for="" class="text">
+                                    <label for="" class="text desktop">
                                         <p>Phone</p>
                                         <input class="text-required" type="tel" required placeholder="Your phone number:" pattern="[0-9]{12}">
                                     </label>
                                 </div>
+                                <label for="" class="text mobile">
+                                        <p>Name</p>
+                                        <input class="text-required" type="text" required placeholder="What is your name:">
+                                </label>
+                                <label for="" class="text mobile">
+                                        <p>Phone</p>
+                                        <input class="text-required" type="tel" required placeholder="Your phone number:" pattern="[0-9]{12}">
+                                </label>
                                 <label for="" class="text">
                                     <p>Email</p>
                                     <input class="text-required" type="email" required placeholder="Your email">
@@ -643,16 +692,53 @@
                                         <div class="control-indicator"></div>
                                 </label>
                                 <button class="personal-form--form-btn" type="submit">Call the measurer</button>
-                            </form>
-                               
+                            </form> 
+                        </div>
+                        <div class="required--form mobile-form">
+                            <form action="" >
+                                <h3>have any questions?</h3>
+                                <div class="label-flex">
+                                    <label for="" class="text desktop">
+                                        <p>Name</p>
+                                        <input class="text-required" type="text" required placeholder="What is your name:">
+                                    </label>
+                                    <label for="" class="text desktop">
+                                        <p>Phone</p>
+                                        <input class="text-required" type="tel" required placeholder="Your phone number:" pattern="[0-9]{12}">
+                                    </label>
+                                </div>
+                                <label for="" class="text mobile">
+                                        <p>Name</p>
+                                        <input class="text-required" type="text" required placeholder="What is your name:">
+                                </label>
+                                <label for="" class="text mobile">
+                                        <p>Phone</p>
+                                        <input class="text-required" type="tel" required placeholder="Your phone number:" pattern="[0-9]{12}">
+                                </label>
+                                <label for="" class="text">
+                                    <p>Question</p>
+                                    <input class="text-required" type="text" required placeholder="I whant to know:">
+                                </label>
+                                <label class="control-checkbox">
+                                        I agree to the processing of personal data
+                                        <input type="checkbox" checked="checked">            
+                                        <div class="control-indicator"></div>
+                                </label>
+                                <button class="personal-form--form-btn" type="submit">Submit</button>
+                            </form> 
                         </div>
                 </div>
             </section>
             <section class="address">
                 <div class="wrapper--main">
+                        <div class="address--map mobile-map">
+                            <img src="/dist/asserts/img/mobile-map.png" alt="mobile-map">
+                        </div>
+                    
                     <h2> Rostov-on-Don, Nansen St., 239 Shopping Center
                         <br>
-                           Decorum Tel +7 (928) 768 32 29 </h2>
+                           Decorum Tel +7 (928) 768 32 29
+                    </h2>
                     <div class="address--icons">
                         <button class="address--icons-btn">
                             <img src="/dist/asserts/img/letter-icon.svg" alt="letter-icon">
@@ -661,8 +747,8 @@
                             <img src="/dist/asserts/img/inst-icon.svg" alt="inst-icon">
                         </button> 
                     </div>
-                    <div class="address--map">
-                        <img src="/dist/asserts/img/map.png" alt="map">
+                    <div class="address--map desktop-map">
+                        <img src="/dist/asserts/img/map.png" class="map-img" alt="map">
                     </div>
                 </div>
             </section>    

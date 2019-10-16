@@ -12,8 +12,9 @@
 }
 
 .first-section__button {
+  width: 207px;
+  height: 51px;
   margin-right: 20px;
-  padding: 19px 42px 21px 41px;
   line-height: 15px;
   text-align: center;
   color: #ffffff;
@@ -85,6 +86,10 @@
   }
 }
 
+.mobile {
+  display: none;
+}
+
 .cards-btn {
   position: absolute;
   bottom: -26px;
@@ -122,6 +127,23 @@
 .address--icons-btn {
   background-color: $color-black;
   border: none;
+}
+
+.slider-btn--yellow {
+  background: transparent;
+  border: none;
+}
+
+.btn-right {
+  position: absolute;
+  top: 114px;
+  left: 297px;
+}
+
+.btn-left {
+  position: absolute;
+  top: 114px;
+  left: 25px;
 }
 
 
