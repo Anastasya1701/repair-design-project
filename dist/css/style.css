@@ -752,13 +752,13 @@ th {
 .btn-right {
   position: absolute;
   top: 114px;
-  left: 297px;
+  left: 325px;
 }
 
 .btn-left {
   position: absolute;
   top: 114px;
-  left: 25px;
+  left: 37px;
 }
 
 .header {
@@ -2176,6 +2176,7 @@ input[type=text] {
   .slider-btn {
     position: relative;
     display: block;
+    text-align: center;
   }
   .slider--images {
     display: none;
@@ -2448,6 +2449,12 @@ input[type=text] {
   .completed-projects-section .projects--logo p {
     font-size: 14px;
     line-height: 158.48%;
+  }
+  .completed-projects-section .projects .btn-right {
+    left: 305px;
+  }
+  .completed-projects-section .projects .btn-left {
+    left: 25px;
   }
   .online-control-section {
     padding: 57px 0 28px 0;

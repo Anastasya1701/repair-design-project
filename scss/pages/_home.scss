@@ -1095,6 +1095,7 @@ input[type=text] {
     &-btn {
       position: relative;
       display: block;
+      text-align: center;
     }
     &--images {
       display: none;
@@ -1373,6 +1374,12 @@ input[type=text] {
         font-size: 14px;
         line-height: 158.48%;
       }
+    }
+    .btn-right {
+      left: 305px;
+    }
+    .btn-left {
+      left: 25px;
     }
   }
 
