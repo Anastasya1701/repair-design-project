@@ -502,8 +502,8 @@ th {
           justify-content: space-between;
   height: 864px;
   overflow: visible;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/dist/asserts/img/appartment.png);
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/dist/asserts/img/appartment.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../../dist/asserts/img/appartment.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../dist/asserts/img/appartment.png);
   background-repeat: no-repeat;
 }
 
@@ -897,8 +897,8 @@ footer .header--container {
 .invite-section {
   height: 707px;
   margin-left: 84px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/dist/asserts/img/imageFirstS.png);
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/dist/asserts/img/imageFirstS.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../../dist/asserts/img/imageFirstS.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../dist/asserts/img/imageFirstS.png);
 }
 
 .wrapper--main--text {
@@ -1416,7 +1416,7 @@ input[type=text] {
   padding-right: 335px;
   padding-bottom: 50px;
   overflow: hidden;
-  background: url(/dist/asserts/img/buildings.png);
+  background: url(../../dist/asserts/img/buildings.png);
   background-repeat: no-repeat;
   background-position-x: 157px;
 }
@@ -2387,8 +2387,8 @@ input[type=text] {
   .invite-section {
     height: 476px;
     margin-left: 0;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/dist/asserts/img/imageFirstS-mobile.png);
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/dist/asserts/img/imageFirstS-mobile.png);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../../dist/asserts/img/imageFirstS-mobile.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../dist/asserts/img/imageFirstS-mobile.png);
   }
   .invite-section .wrapper--main--text {
     position: relative;

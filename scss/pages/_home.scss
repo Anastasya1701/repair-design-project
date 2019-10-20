@@ -37,7 +37,7 @@
   // width: 94%;
   height: 707px;
   margin-left: 84px;
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(/dist/asserts/img/imageFirstS.png);
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../../dist/asserts/img/imageFirstS.png);
 }
 
 .wrapper--main--text {
@@ -452,7 +452,7 @@ input[type=text] {
   padding-right: 335px;
   padding-bottom: 50px;
   overflow: hidden;
-  background: url(/dist/asserts/img/buildings.png);
+  background: url(../../dist/asserts/img/buildings.png);
   background-repeat: no-repeat;
   background-position-x: 157px;
   &-orange {
@@ -1308,7 +1308,7 @@ input[type=text] {
   .invite-section {
     height: 476px;
     margin-left: 0;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/dist/asserts/img/imageFirstS-mobile.png);
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../../dist/asserts/img/imageFirstS-mobile.png);
     & .wrapper--main--text {
       position: relative;
       top: 91px;
